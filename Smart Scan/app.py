@@ -12,8 +12,8 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-# Simplified CORS setup
-CORS(app)
+# Simplified CORS setup for production
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configure Gemini API
 GOOGLE_API_KEY = os.getenv('GEMINI_API_KEY')

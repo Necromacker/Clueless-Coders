@@ -8,7 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app) # Enable CORS for frontend requests
+# Allow your specific Netlify domain and localhost for testing
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Constants
 API_BASE_URL = "https://api.foodoscope.com/recipe2-api/instructions/"
@@ -66,9 +67,13 @@ def get_instructions(recipe_id):
         
         response.raise_for_status() 
         return jsonify(data)
-    except requests.exceptions.RequestException as e:
+    except Exception as e:
         print(f"API Error: {str(e)}")
-        return jsonify({"error": str(e)}), 500
+        # Return a more descriptive error for debugging
+        return jsonify({
+            "error": "Backend encountered an error fetching data",
+            "message": str(e)
+        }), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
