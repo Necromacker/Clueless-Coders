@@ -77,7 +77,8 @@ const SmartScan = () => {
         }
 
         try {
-            const url = 'http://127.0.0.1:5002/identify';
+            const backendUrl = import.meta.env.VITE_API_URL_SCAN || 'http://127.0.0.1:5002';
+            const url = `${backendUrl}/identify`;
             console.log(`[FRONTEND REQUEST] Smart Scan: ${url}`);
 
             const response = await fetch(url, {

@@ -80,7 +80,8 @@ const CookWithUs = () => {
         setError('');
 
         try {
-            const response = await fetch(`http://127.0.0.1:5001/api/instructions/${idToUse}`);
+            const backendUrl = import.meta.env.VITE_API_URL_COOK || 'http://127.0.0.1:5001';
+            const response = await fetch(`${backendUrl}/api/instructions/${idToUse}`);
 
             if (!response.ok) {
                 const errData = await response.json().catch(() => ({}));
