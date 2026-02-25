@@ -119,11 +119,19 @@ def identify_food():
 
         # Generate content
         print(f"[BACKEND CALL] Sending to Gemini API...")
-        response = model.generate_content([prompt, image])
-        
+        try:
+            response = model.generate_content([prompt, image])
+            if not response or not response.candidates:
+                return jsonify({'error': 'AI could not process this image. It might have been blocked by safety filters.'}), 400
+            
+            text_content = response.text
+        except Exception as e:
+            print(f"[GEMINI ERROR] {str(e)}")
+            return jsonify({'error': 'Gemini AI Error', 'message': str(e)}), 500
+
         # Extract and parse text
-        if response.text:
-            cleaned_text = response.text.strip()
+        if text_content:
+            cleaned_text = text_content.strip()
             # Remove markdown code blocks if present
             if cleaned_text.startswith("```json"):
                 cleaned_text = cleaned_text[7:]
