@@ -26,6 +26,12 @@
     font-size: 1.25rem;
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -84,8 +90,90 @@
     box-shadow: 5px 5px 0px 0px #0037B3;
 }
 
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
 @media (max-width: 992px) {
-    .nav-links {
+    .navbar {
+        padding: 0.5rem 1rem;
+        top: 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 2px solid #f0f0f0;
+        gap: 2rem;
         display: none;
+        transform-origin: top;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .login-btn,
+    .start-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start-btn {
+        padding: 1rem;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scaleY(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
     }
 }

@@ -12,7 +12,20 @@ const SmartScan = () => {
     const [dragActive, setDragActive] = useState(false);
     const [nutritionData, setNutritionData] = useState(null);
     const [error, setError] = useState(null);
+    const [isCameraActive, setIsCameraActive] = useState(false);
+
     const fileInputRef = useRef(null);
+    const videoRef = useRef(null);
+    const canvasRef = useRef(null);
+    const streamRef = useRef(null);
+
+    useEffect(() => {
+        return () => {
+            if (streamRef.current) {
+                streamRef.current.getTracks().forEach(track => track.stop());
+            }
+        };
+    }, []);
 
     const handlePhotoUpload = (e) => {
         e.preventDefault();
@@ -22,7 +35,51 @@ const SmartScan = () => {
             setPhotoFile(file);
             setNutritionData(null);
             setError(null);
-            setFoodName(''); // Clear manual input if photo is selected
+            setFoodName('');
+        }
+    };
+
+    const startCamera = async () => {
+        setIsCameraActive(true);
+        setError(null);
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({
+                video: { facingMode: 'environment' }
+            });
+            streamRef.current = stream;
+            if (videoRef.current) {
+                videoRef.current.srcObject = stream;
+            }
+        } catch (err) {
+            console.error("Camera error:", err);
+            setError("Could not access camera. Please check permissions.");
+            setIsCameraActive(false);
+        }
+    };
+
+    const stopCamera = () => {
+        if (streamRef.current) {
+            streamRef.current.getTracks().forEach(track => track.stop());
+            streamRef.current = null;
+        }
+        setIsCameraActive(false);
+    };
+
+    const capturePhoto = () => {
+        if (videoRef.current && canvasRef.current) {
+            const video = videoRef.current;
+            const canvas = canvasRef.current;
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            canvas.toBlob((blob) => {
+                const file = new File([blob], "captured-food.jpg", { type: "image/jpeg" });
+                setPhoto(URL.createObjectURL(blob));
+                setPhotoFile(file);
+                stopCamera();
+            }, 'image/jpeg', 0.95);
         }
     };
 
@@ -140,10 +197,15 @@ const SmartScan = () => {
             <div className="input-section-wrapper">
                 <div className="scan-input-card">
                     <div className="input-options-row">
-                        {/* Option 1: Upload */}
+                        {/* Option 1: Upload / Camera */}
                         <div
                             className={`scan-option-box ${photo ? 'active' : ''}`}
-                            onClick={() => fileInputRef.current?.click()}
+                            onClick={() => {
+                                if (photo) return;
+                                // Simple logic: if user clicks box, we could show a choice or just start camera
+                                // Let's add a small toggle inside or just start camera by default for "Click Picture"
+                                startCamera();
+                            }}
                         >
                             {photo ? (
                                 <div className="preview-container">
@@ -165,6 +227,15 @@ const SmartScan = () => {
                                         <Camera size={28} />
                                     </div>
                                     <span className="option-label">Click Picture</span>
+                                    <div
+                                        className="upload-instead-link"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            fileInputRef.current?.click();
+                                        }}
+                                    >
+                                        or upload photo <Upload size={14} style={{ display: 'inline', marginLeft: 4 }} />
+                                    </div>
                                 </>
                             )}
                             <input
@@ -200,6 +271,37 @@ const SmartScan = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Camera Modal/Overlay */}
+                    <AnimatePresence>
+                        {isCameraActive && (
+                            <motion.div
+                                className="camera-overlay"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                            >
+                                <div className="camera-container">
+                                    <video
+                                        ref={videoRef}
+                                        autoPlay
+                                        playsInline
+                                        className="camera-video"
+                                    />
+                                    <div className="camera-controls">
+                                        <button className="cam-btn close-cam" onClick={stopCamera}>
+                                            <X size={24} />
+                                        </button>
+                                        <button className="cam-btn capture-btn" onClick={capturePhoto}>
+                                            <div className="capture-inner" />
+                                        </button>
+                                        <div className="cam-placeholder" />
+                                    </div>
+                                    <canvas ref={canvasRef} style={{ display: 'none' }} />
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
 
                     {error && (
                         <div style={{ color: '#E53E3E', fontWeight: 700, textAlign: 'center' }}>

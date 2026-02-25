@@ -37,27 +37,8 @@ const CalorieGoal = () => {
 
             <div className="stories-marquee">
                 <div className="stories-track">
-                    {/* First Set */}
-                    {STORIES.map((story) => (
-                        <div key={`set1-${story.id}`} className="story-card">
-                            <div className="story-visual">
-                                <img src={story.image} alt={story.name} className="story-img" />
-                            </div>
-                            <div className="story-content">
-                                <div className="brand-badge">
-                                    <span>★</span>
-                                    {story.brand}
-                                </div>
-                                <h3 className="story-name">{story.name}</h3>
-                                <p className="story-desc">
-                                    {story.description}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                    {/* Second Set for Loop */}
-                    {STORIES.map((story) => (
-                        <div key={`set2-${story.id}`} className="story-card">
+                    {[...STORIES, ...STORIES, ...STORIES, ...STORIES].map((story, idx) => (
+                        <div key={`${story.id}-${idx}`} className="story-card">
                             <div className="story-visual">
                                 <img src={story.image} alt={story.name} className="story-img" />
                             </div>

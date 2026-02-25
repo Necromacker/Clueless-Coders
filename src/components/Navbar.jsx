@@ -1,7 +1,11 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -16,21 +20,28 @@ const Navbar = () => {
           <span className="logo-text">NutriPocket</span>
         </Link>
 
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/personalize">Health Planner</Link></li>
-          <li><Link to="/scan">Smart Scan</Link></li>
-          <li>
-            <Link to="/cook">
-              Cook with us
-              <span className="badge">NEW</span>
-            </Link>
-          </li>
-        </ul>
+        {/* Mobile Menu Toggle */}
+        <button className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
 
-        <div className="nav-actions">
-          <Link to="/login" className="login-btn">Login</Link>
-          <Link to="/personalize" className="start-btn">Start for free</Link>
+        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+          <ul className="nav-links">
+            <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+            <li><Link to="/personalize" onClick={() => setIsMenuOpen(false)}>Health Planner</Link></li>
+            <li><Link to="/scan" onClick={() => setIsMenuOpen(false)}>Smart Scan</Link></li>
+            <li>
+              <Link to="/cook" onClick={() => setIsMenuOpen(false)}>
+                Cook with us
+                <span className="badge">NEW</span>
+              </Link>
+            </li>
+          </ul>
+
+          <div className="nav-actions">
+            <Link to="/login" className="login-btn" onClick={() => setIsMenuOpen(false)}>Login</Link>
+            <Link to="/personalize" className="start-btn" onClick={() => setIsMenuOpen(false)}>Start for free</Link>
+          </div>
         </div>
       </div>
     </nav>
