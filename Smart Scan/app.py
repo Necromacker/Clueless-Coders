@@ -81,41 +81,26 @@ def identify_food():
         img_bytes = file.read()
         image = Image.open(io.BytesIO(img_bytes))
 
-        # Get recipe titles for fuzzy matching
-        recipe_titles = get_recipe_titles()
-        titles_str = ", ".join(recipe_titles)
+
 
         # Prepare prompt
         prompt = f"""
-        Identify the food in this image and write a short description of it.
+        Identify the food in this image and provide detailed nutritional analysis.
         
-        I have a database of recipes with the following titles: {titles_str}
-        
-        Compare your description of the specific food in the image with my list of recipe titles.
-        
-        Rules for matching:
-        1. Look for an exact match first.
-        2. If no exact match, look for a "closest match" based on the MAIN INGREDIENT or DISH TYPE.
-           - Example: If you see "Plain Rice" and my list has "Egyptian Rice with Vermicelli", MATCH IT.
-           - Example: If you see "Grilled Chicken" and my list has "Chicken Panne" or "Roasted Chicken", MATCH IT.
-           - Example: If you see "Beef Stew" and my list has "Egyptian Meat Stew", MATCH IT.
-        3. Your goal is to find the *best available nutrition data source* from my list, even if it's not the exact same variation.
-        
-        If you find a matching (or similar) recipe in my list, provide the EXACT 'matched_recipe_title' from my list.
-        Only set 'matched_recipe_title' to null if the food is completely unrelated to anything in my list.
-        
-        Regardless of matching, please estimate:
-        1. The nutritional content for one serving (Calories, Protein, Fat, Carbs).
-        2. A breakdown of likely ingredients with approximate quantities.
-        3. Key micronutrients present.
+        Please provide:
+        1. The common name of the food.
+        2. A short, appetizing description.
+        3. Estimated nutritional content for one serving (Calories, Protein, Fat, Carbs).
+        4. A breakdown of likely ingredients with approximate quantities and their individual calorie/protein impact.
+        5. Key micronutrients present (Vitamins, Minerals).
+        6. A quick health insight (one sentence).
 
         Return the result as a JSON object with the following keys:
         - identified_food: The common name.
         - description: Short description.
-        - matched_recipe_title: The exact title from my list that matches, or null.
         - estimated_macros: {{ "calories": numeric, "protein": numeric_g, "fat": numeric_g, "carbs": numeric_g }}
         - estimated_ingredients: [ {{ "name": string, "quantity": string, "cals": numeric, "p": string_protein_g }} ]
-        - micronutrients: [ string, string ] (e.g. "Vitamin A", "Iron")
+        - micronutrients: [ string, string ]
         - health_insight: One sentence insight.
         
         Return ONLY the JSON. Do not add any other text or markdown formatting.
@@ -145,46 +130,20 @@ def identify_food():
             try:
                 result = json.loads(cleaned_text)
                 print(f"[BACKEND DEBUG] Gemini Identified: {result.get('identified_food')}")
-                print(f"[BACKEND DEBUG] Gemini Matched With: {result.get('matched_recipe_title')}")
 
-                # If there's a match, find the nutrition data from DB
-                matched_data = None
-                
-                if result.get('matched_recipe_title'):
-                    for item in NUTRITION_DATA:
-                        if item.get('recipeTitle') == result['matched_recipe_title']:
-                            matched_data = item
-                            break
-                
-                # Determine Macros Source
-                final_macros = {}
-                data_source_note = ""
-                
-                if matched_data:
-                    # Use DB Macros
-                    final_macros = {
-                        'calories': float(matched_data.get('Calories', 0)),
-                        'protein': float(matched_data.get('Protein (g)', 0)),
-                        'fat': float(matched_data.get('Total lipid (fat) (g)', 0)),
-                        'carbs': float(matched_data.get('Carbohydrate, by difference (g)', 0))
-                    }
-                    data_source_note = f" (Verified data for: {result['matched_recipe_title']})"
-                else:
-                    # Use Gemini Estimated Macros
-                    est = result.get('estimated_macros', {})
-                    final_macros = {
-                        'calories': est.get('calories', 0),
-                        'protein': est.get('protein', 0),
-                        'fat': est.get('fat', 0),
-                        'carbs': est.get('carbs', 0)
-                    }
-                    data_source_note = " (AI Estimated)"
+                # Use Gemini Estimated Macros directly
+                est = result.get('estimated_macros', {})
+                final_macros = {
+                    'calories': est.get('calories', 0),
+                    'protein': est.get('protein', 0),
+                    'fat': est.get('fat', 0),
+                    'carbs': est.get('carbs', 0)
+                }
 
                 # Construct response
                 response_data = {
                     'identified_food': result.get('identified_food', 'Unknown Food'),
-                    'description': result.get('description', '') + data_source_note,
-                    'matched_recipe_title': result.get('matched_recipe_title'),
+                    'description': result.get('description', ''),
                     'macros': final_macros,
                     'ingredients': result.get('estimated_ingredients', []),
                     'micronutrients': result.get('micronutrients', []),
