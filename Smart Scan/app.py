@@ -196,8 +196,13 @@ def identify_food():
 
 
     except Exception as e:
-        print(f"Error processing image: {e}")
-        return jsonify({'error': str(e)}), 500
+        print(f"[BACKEND CRITICAL ERROR] {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            'error': 'Internal server error during identification',
+            'message': str(e)
+        }), 500
 
 
 # -------------------------------------------------------------------
