@@ -12,8 +12,12 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-# Simplified CORS setup for production
-CORS(app, resources={r"/*": {"origins": "*"}})
+# Broadest possible CORS for debugging
+CORS(app, resources={r"/*": {"origins": "*", "allow_headers": "*", "methods": "*"}})
+
+@app.route('/ping')
+def ping():
+    return jsonify({"status": "alive", "api_key_configured": bool(GOOGLE_API_KEY)})
 
 # Configure Gemini API
 GOOGLE_API_KEY = os.getenv('GEMINI_API_KEY')

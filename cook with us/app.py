@@ -11,6 +11,10 @@ app = Flask(__name__)
 # Allow your specific Netlify domain and localhost for testing
 CORS(app, resources={r"/*": {"origins": "*"}})
 
+@app.route('/ping')
+def ping():
+    return jsonify({"status": "alive"})
+
 # Constants
 API_BASE_URL = "https://api.foodoscope.com/recipe2-api/instructions/"
 API_TOKEN = "Bearer mLZ-KEZF3VRKmnYQcmpjJH8gUqISWQqE0FStiAQKRt0rRP7Y"
