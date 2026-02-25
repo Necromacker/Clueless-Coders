@@ -13,7 +13,7 @@ CORS(app) # Enable CORS for frontend requests
 # Constants
 API_BASE_URL = "https://api.foodoscope.com/recipe2-api/instructions/"
 API_TOKEN = "Bearer mLZ-KEZF3VRKmnYQcmpjJH8gUqISWQqE0FStiAQKRt0rRP7Y"
-
+# update site
 # Local recipes for custom dishes
 LOCAL_RECIPES = {
     9001: {
