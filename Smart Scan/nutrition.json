@@ -1,0 +1,908 @@
+[
+  {
+    "recipeTitle": "Quick and Easy Egyptian Chicken Broth",
+    "Calories": "418.0",
+    "Protein (g)": "90.7007",
+    "Total lipid (fat) (g)": "82.8815",
+    "Carbohydrate, by difference (g)": "28.8948"
+  },
+  {
+    "recipeTitle": "Kofta",
+    "Calories": "231.0",
+    "Protein (g)": "93.0839",
+    "Total lipid (fat) (g)": "62.671",
+    "Carbohydrate, by difference (g)": "19.6895"
+  },
+  {
+    "recipeTitle": "Ta'ameya (Egyptian Falafel)",
+    "Calories": "234.0",
+    "Protein (g)": "133.2597",
+    "Total lipid (fat) (g)": "128.5493",
+    "Carbohydrate, by difference (g)": "288.0574"
+  },
+  {
+    "recipeTitle": "The Perfect Egyptian Rice with Vermicelli",
+    "Calories": "330.0",
+    "Protein (g)": "4.4733",
+    "Total lipid (fat) (g)": "20.805",
+    "Carbohydrate, by difference (g)": "31.8679"
+  },
+  {
+    "recipeTitle": "Egyptian Meatballs",
+    "Calories": "90.0",
+    "Protein (g)": "120.9629",
+    "Total lipid (fat) (g)": "92.2091",
+    "Carbohydrate, by difference (g)": "156.3066"
+  },
+  {
+    "recipeTitle": "Egyptian Lahma Bil Basal (Beef in Rich Onion Sauce)",
+    "Calories": "394.0",
+    "Protein (g)": "33.7192",
+    "Total lipid (fat) (g)": "55.2341",
+    "Carbohydrate, by difference (g)": "104.6808"
+  },
+  {
+    "recipeTitle": "African-Style Oxtail Stew",
+    "Calories": "669.0",
+    "Protein (g)": "257.1458",
+    "Total lipid (fat) (g)": "384.2864",
+    "Carbohydrate, by difference (g)": "61.3927"
+  },
+  {
+    "recipeTitle": "Jollof Rice",
+    "Calories": "332.0",
+    "Protein (g)": "30.4991",
+    "Total lipid (fat) (g)": "17.4933",
+    "Carbohydrate, by difference (g)": "237.934"
+  },
+  {
+    "recipeTitle": "Peri Peri African Chicken",
+    "Calories": "348.0",
+    "Protein (g)": "7.5372",
+    "Total lipid (fat) (g)": "6.4955",
+    "Carbohydrate, by difference (g)": "43.1977"
+  },
+  {
+    "recipeTitle": "Best Hot Sauce",
+    "Calories": "14.0",
+    "Protein (g)": "3.4759",
+    "Total lipid (fat) (g)": "109.7512",
+    "Carbohydrate, by difference (g)": "47.9025"
+  },
+  {
+    "recipeTitle": "Egyptian Lentil Soup",
+    "Protein (g)": "45.9072",
+    "Total lipid (fat) (g)": "4.1664",
+    "Carbohydrate, by difference (g)": "121.152"
+  },
+  {
+    "recipeTitle": "Egyptian Green Beans with Carrots",
+    "Protein (g)": "0.3816",
+    "Total lipid (fat) (g)": "0.03",
+    "Carbohydrate, by difference (g)": "1.9836"
+  },
+  {
+    "recipeTitle": "Egyptian Bamia",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "54.0",
+    "Carbohydrate, by difference (g)": "0.0"
+  },
+  {
+    "recipeTitle": "Magpie's Easy Falafel Cakes",
+    "Protein (g)": "0.2227",
+    "Total lipid (fat) (g)": "0.3199",
+    "Carbohydrate, by difference (g)": "0.9898"
+  },
+  {
+    "recipeTitle": "Dukkah",
+    "Protein (g)": "1.4338",
+    "Total lipid (fat) (g)": "0.4499",
+    "Carbohydrate, by difference (g)": "8.8251"
+  },
+  {
+    "recipeTitle": "Om Ali",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "109.0",
+    "Carbohydrate, by difference (g)": "0.0"
+  },
+  {
+    "recipeTitle": "Rice Pudding with Lemon Juice and Caramelized Onion (Egyptian Kishk)",
+    "Protein (g)": "3.52",
+    "Total lipid (fat) (g)": "0.32",
+    "Carbohydrate, by difference (g)": "29.888"
+  },
+  {
+    "recipeTitle": "Couscous with Olives and Sun-Dried Tomato",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "0.0",
+    "Carbohydrate, by difference (g)": "0.0"
+  },
+  {
+    "recipeTitle": "Fava Bean Breakfast Spread",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "20.25",
+    "Carbohydrate, by difference (g)": "0.0"
+  },
+  {
+    "recipeTitle": "Koshary",
+    "Protein (g)": "0.2227",
+    "Total lipid (fat) (g)": "0.3199",
+    "Carbohydrate, by difference (g)": "0.9898"
+  },
+  {
+    "recipeTitle": "Fava Beans in Tahini Sauce",
+    "Protein (g)": "0.9540000000000001",
+    "Total lipid (fat) (g)": "0.075",
+    "Carbohydrate, by difference (g)": "4.959"
+  },
+  {
+    "recipeTitle": "African Cabbage Stew",
+    "Calories": "138.0",
+    "Protein (g)": "9.4602",
+    "Total lipid (fat) (g)": "55.487",
+    "Carbohydrate, by difference (g)": "48.9424"
+  },
+  {
+    "recipeTitle": "North African Beef Stew",
+    "Calories": "427.0",
+    "Protein (g)": "207.8279",
+    "Total lipid (fat) (g)": "5.8968",
+    "Carbohydrate, by difference (g)": "40.5614"
+  },
+  {
+    "recipeTitle": "Peppermint Liqueur",
+    "Calories": "0.0",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "0.0",
+    "Carbohydrate, by difference (g)": "249.95"
+  },
+  {
+    "recipeTitle": "Beef Curry Soup",
+    "Calories": "382.0",
+    "Protein (g)": "63.5289",
+    "Total lipid (fat) (g)": "98.4052",
+    "Carbohydrate, by difference (g)": "184.8345"
+  },
+  {
+    "recipeTitle": "South African Malvapoeding (Marshmallow Pudding)",
+    "Calories": "396.0",
+    "Protein (g)": "36.528",
+    "Total lipid (fat) (g)": "72.4136",
+    "Carbohydrate, by difference (g)": "337.4397"
+  },
+  {
+    "recipeTitle": "Beetroot Pancakes",
+    "Calories": "292.0",
+    "Protein (g)": "16.2261",
+    "Total lipid (fat) (g)": "26.574",
+    "Carbohydrate, by difference (g)": "75.898"
+  },
+  {
+    "recipeTitle": "Chicken Casablanca",
+    "Calories": "401.0",
+    "Protein (g)": "121.6622",
+    "Total lipid (fat) (g)": "42.552",
+    "Carbohydrate, by difference (g)": "81.8275"
+  },
+  {
+    "recipeTitle": "Chakchouka (Shakshouka)",
+    "Calories": "209.0",
+    "Protein (g)": "33.1885",
+    "Total lipid (fat) (g)": "61.5706",
+    "Carbohydrate, by difference (g)": "47.462"
+  },
+  {
+    "recipeTitle": "Algerian Flafla (Bell Pepper Salad)",
+    "Calories": "53.0",
+    "Protein (g)": "0.3008",
+    "Total lipid (fat) (g)": "13.525",
+    "Carbohydrate, by difference (g)": "1.9258"
+  },
+  {
+    "recipeTitle": "H'rira Onctueuse a L'Agneau (Rich and Creamy Harira Soup)",
+    "Calories": "323.0",
+    "Protein (g)": "178.6866",
+    "Total lipid (fat) (g)": "161.2651",
+    "Carbohydrate, by difference (g)": "288.1647"
+  },
+  {
+    "recipeTitle": "Algerian Kefta (Meatballs)",
+    "Calories": "424.0",
+    "Protein (g)": "105.8245",
+    "Total lipid (fat) (g)": "12.3046",
+    "Carbohydrate, by difference (g)": "7.7823"
+  },
+  {
+    "recipeTitle": "Bissara",
+    "Calories": "371.0",
+    "Protein (g)": "25.527",
+    "Total lipid (fat) (g)": "102.1028",
+    "Carbohydrate, by difference (g)": "70.7943"
+  },
+  {
+    "recipeTitle": "Atlas Mountain Soup",
+    "Calories": "405.0",
+    "Protein (g)": "85.7818",
+    "Total lipid (fat) (g)": "128.2994",
+    "Carbohydrate, by difference (g)": "57.5093"
+  },
+  {
+    "recipeTitle": "Chicken Tagine with Couscous",
+    "Calories": "340.0",
+    "Protein (g)": "201.6503",
+    "Total lipid (fat) (g)": "10.2991",
+    "Carbohydrate, by difference (g)": "227.9148"
+  },
+  {
+    "recipeTitle": "Diced Lamb with Roasted Vegetables and Couscous",
+    "Calories": "1216.0",
+    "Protein (g)": "61.7894",
+    "Total lipid (fat) (g)": "162.3835",
+    "Carbohydrate, by difference (g)": "14.4586"
+  },
+  {
+    "recipeTitle": "Salmon with Harissa",
+    "Calories": "312.0",
+    "Protein (g)": "90.2539",
+    "Total lipid (fat) (g)": "37.8506",
+    "Carbohydrate, by difference (g)": "2.2732"
+  },
+  {
+    "recipeTitle": "Harissa",
+    "Calories": "28.0",
+    "Protein (g)": "37.9946",
+    "Total lipid (fat) (g)": "111.3379",
+    "Carbohydrate, by difference (g)": "18.0785"
+  },
+  {
+    "recipeTitle": "Ethiopian Cabbage and Potato Dish (Atkilt)",
+    "Calories": "336.0",
+    "Protein (g)": "7.7053",
+    "Total lipid (fat) (g)": "74.029",
+    "Carbohydrate, by difference (g)": "69.8335"
+  },
+  {
+    "recipeTitle": "Doro Wat",
+    "Calories": "498.0",
+    "Protein (g)": "8.7899",
+    "Total lipid (fat) (g)": "22.2396",
+    "Carbohydrate, by difference (g)": "18.5702"
+  },
+  {
+    "recipeTitle": "Mombasa Pumpkin Dessert",
+    "Calories": "210.0",
+    "Protein (g)": "5.7112",
+    "Total lipid (fat) (g)": "57.35",
+    "Carbohydrate, by difference (g)": "414.5854"
+  },
+  {
+    "recipeTitle": "Ethiopian Chicken",
+    "Calories": "157.0",
+    "Protein (g)": "1287.1769",
+    "Total lipid (fat) (g)": "933.8544",
+    "Carbohydrate, by difference (g)": "24.0575"
+  },
+  {
+    "recipeTitle": "Ethiopian Firfir with Dried Beef (Quanta Firfir)",
+    "Calories": "463.0",
+    "Protein (g)": "107.9845",
+    "Total lipid (fat) (g)": "85.8159",
+    "Carbohydrate, by difference (g)": "84.9405"
+  },
+  {
+    "recipeTitle": "Kik Wat (Ethiopian Red Lentil Stew)",
+    "Calories": "432.0",
+    "Protein (g)": "252.7705",
+    "Total lipid (fat) (g)": "342.573",
+    "Carbohydrate, by difference (g)": "763.4783"
+  },
+  {
+    "recipeTitle": "Iranian _ Persian Salad Shirazi",
+    "Calories": "145.0",
+    "Protein (g)": "13.4766",
+    "Total lipid (fat) (g)": "43.0058",
+    "Carbohydrate, by difference (g)": "56.6905"
+  },
+  {
+    "recipeTitle": "Pomegranate Stew with Chicken (Khoresh Fesenjan)",
+    "Calories": "785.0",
+    "Protein (g)": "114.6779",
+    "Total lipid (fat) (g)": "365.3721",
+    "Carbohydrate, by difference (g)": "175.1043"
+  },
+  {
+    "recipeTitle": "Lamb and Asparagus Stew",
+    "Calories": "503.0",
+    "Protein (g)": "44.2104",
+    "Total lipid (fat) (g)": "94.8115",
+    "Carbohydrate, by difference (g)": "39.0559"
+  },
+  {
+    "recipeTitle": "Persian Rice",
+    "Calories": "255.0",
+    "Protein (g)": "8.1508",
+    "Total lipid (fat) (g)": "48.6592",
+    "Carbohydrate, by difference (g)": "12.0841"
+  },
+  {
+    "recipeTitle": "Ginger Sekanjabin",
+    "Calories": "0.0",
+    "Protein (g)": "45.3586",
+    "Total lipid (fat) (g)": "3.4145",
+    "Carbohydrate, by difference (g)": "937.0686"
+  },
+  {
+    "recipeTitle": "Persian Lentil Stew",
+    "Calories": "268.0",
+    "Protein (g)": "27.4176",
+    "Total lipid (fat) (g)": "48.1503",
+    "Carbohydrate, by difference (g)": "102.2267"
+  },
+  {
+    "recipeTitle": "Mast-o-Khiar",
+    "Calories": "126.0",
+    "Protein (g)": "21.9389",
+    "Total lipid (fat) (g)": "136.8071",
+    "Carbohydrate, by difference (g)": "94.3062"
+  },
+  {
+    "recipeTitle": "Moroccan Semolina Soup with Milk, Anise Seeds, and Honey",
+    "Calories": "257.0",
+    "Protein (g)": "28.7706",
+    "Total lipid (fat) (g)": "38.6703",
+    "Carbohydrate, by difference (g)": "43.897"
+  },
+  {
+    "recipeTitle": "Mushroom and Chickpea Tagine",
+    "Calories": "292.0",
+    "Protein (g)": "75.952",
+    "Total lipid (fat) (g)": "56.2835",
+    "Carbohydrate, by difference (g)": "239.6624"
+  },
+  {
+    "recipeTitle": "Harira",
+    "Calories": "467.0",
+    "Protein (g)": "176.8981",
+    "Total lipid (fat) (g)": "158.1575",
+    "Carbohydrate, by difference (g)": "220.8215"
+  },
+  {
+    "recipeTitle": "Senegalese Chicken Yassa",
+    "Calories": "498.0",
+    "Protein (g)": "9.3223",
+    "Total lipid (fat) (g)": "52.8205",
+    "Carbohydrate, by difference (g)": "64.8065"
+  },
+  {
+    "recipeTitle": "Egusi Soup",
+    "Calories": "758.0",
+    "Protein (g)": "261.3219",
+    "Total lipid (fat) (g)": "163.044",
+    "Carbohydrate, by difference (g)": "191.4534"
+  },
+  {
+    "recipeTitle": "Vegan African Stew",
+    "Calories": "379.0",
+    "Protein (g)": "54.1209",
+    "Total lipid (fat) (g)": "105.8234",
+    "Carbohydrate, by difference (g)": "211.9652"
+  },
+  {
+    "recipeTitle": "Curry Beef Soup",
+    "Calories": "343.0",
+    "Protein (g)": "68.6181",
+    "Total lipid (fat) (g)": "90.1042",
+    "Carbohydrate, by difference (g)": "192.4377"
+  },
+  {
+    "recipeTitle": "South African Lamb Sosaties(Kebabs)",
+    "Calories": "172.0",
+    "Protein (g)": "15.4858",
+    "Total lipid (fat) (g)": "23.5997",
+    "Carbohydrate, by difference (g)": "78.0873"
+  },
+  {
+    "recipeTitle": "Bobotie",
+    "Calories": "352.0",
+    "Protein (g)": "236.8963",
+    "Total lipid (fat) (g)": "1365.1466",
+    "Carbohydrate, by difference (g)": "126.0096"
+  },
+  {
+    "recipeTitle": "South African Sugar Bean Soup",
+    "Calories": "473.0",
+    "Protein (g)": "228.6736",
+    "Total lipid (fat) (g)": "68.6268",
+    "Carbohydrate, by difference (g)": "232.9172"
+  },
+  {
+    "recipeTitle": "Cape Malay Pickled Fish",
+    "Calories": "337.0",
+    "Protein (g)": "7.289",
+    "Total lipid (fat) (g)": "112.7678",
+    "Carbohydrate, by difference (g)": "152.0797"
+  },
+  {
+    "recipeTitle": "South African Bobotie",
+    "Calories": "230.0",
+    "Protein (g)": "100.8029",
+    "Total lipid (fat) (g)": "104.4449",
+    "Carbohydrate, by difference (g)": "66.0985"
+  },
+  {
+    "recipeTitle": "Gisela's Butternut Squash Soup",
+    "Calories": "245.0",
+    "Protein (g)": "22.8986",
+    "Total lipid (fat) (g)": "24.8483",
+    "Carbohydrate, by difference (g)": "43.6586"
+  },
+  {
+    "recipeTitle": "Chocolate Fondue L'Afrique",
+    "Calories": "103.0",
+    "Protein (g)": "1.302",
+    "Total lipid (fat) (g)": "18.546",
+    "Carbohydrate, by difference (g)": "1.776"
+  },
+  {
+    "recipeTitle": "Ghorayebah (Butter Biscuits for Eid)",
+    "Calories": "110.0",
+    "Protein (g)": "3.7636",
+    "Total lipid (fat) (g)": "8.1925",
+    "Carbohydrate, by difference (g)": "43.0894"
+  },
+  {
+    "recipeTitle": "Algerian Bouzgene Berber Bread with Roasted Pepper Sauce",
+    "Calories": "796.0",
+    "Protein (g)": "123.7089",
+    "Total lipid (fat) (g)": "24.8934",
+    "Carbohydrate, by difference (g)": "699.7954"
+  },
+  {
+    "recipeTitle": "Vegetable Tagine",
+    "Calories": "282.0",
+    "Protein (g)": "119.2058",
+    "Total lipid (fat) (g)": "45.2594",
+    "Carbohydrate, by difference (g)": "345.1682"
+  },
+  {
+    "recipeTitle": "Couscous de Mouton Tout Simple (Moroccan Mutton Couscous)",
+    "Calories": "917.0",
+    "Protein (g)": "238.6424",
+    "Total lipid (fat) (g)": "271.6884",
+    "Carbohydrate, by difference (g)": "335.7528"
+  },
+  {
+    "recipeTitle": "Tunisian Harissa",
+    "Calories": "10.0",
+    "Protein (g)": "52.2863",
+    "Total lipid (fat) (g)": "31.4554",
+    "Carbohydrate, by difference (g)": "162.288"
+  },
+  {
+    "recipeTitle": "Upside Down (Maqluba)",
+    "Calories": "1019.0",
+    "Protein (g)": "15.4668",
+    "Total lipid (fat) (g)": "6.7093",
+    "Carbohydrate, by difference (g)": "54.6788"
+  },
+  {
+    "recipeTitle": "Arabian Rose Water Pudding (Muhalbiyah)",
+    "Calories": "107.0",
+    "Protein (g)": "1.7308",
+    "Total lipid (fat) (g)": "0.4953",
+    "Carbohydrate, by difference (g)": "140.8049"
+  },
+  {
+    "recipeTitle": "Tunisian Lamb with Saffron (Keleya Zaara)",
+    "Calories": "336.0",
+    "Protein (g)": "118.0556",
+    "Total lipid (fat) (g)": "221.4436",
+    "Carbohydrate, by difference (g)": "20.9355"
+  },
+  {
+    "recipeTitle": "Khobz el Dar (Algerian Semolina Bread)",
+    "Calories": "331.0",
+    "Protein (g)": "24.8823",
+    "Total lipid (fat) (g)": "81.7318",
+    "Carbohydrate, by difference (g)": "85.556"
+  },
+  {
+    "recipeTitle": "Traditional Baba Ghanoush",
+    "Calories": "96.0",
+    "Protein (g)": "0.7721",
+    "Total lipid (fat) (g)": "13.5661",
+    "Carbohydrate, by difference (g)": "4.1426"
+  },
+  {
+    "recipeTitle": "Refreshing Lentil Salad",
+    "Calories": "431.0",
+    "Protein (g)": "23.514",
+    "Total lipid (fat) (g)": "10.49",
+    "Carbohydrate, by difference (g)": "39.9699"
+  },
+  {
+    "recipeTitle": "Mamool or Ma'amoul",
+    "Calories": "472.0",
+    "Protein (g)": "42.3512",
+    "Total lipid (fat) (g)": "747.007",
+    "Carbohydrate, by difference (g)": "393.2222"
+  },
+  {
+    "recipeTitle": "Namoora (Basboosa)",
+    "Calories": "286.0",
+    "Protein (g)": "52.0228",
+    "Total lipid (fat) (g)": "20.1379",
+    "Carbohydrate, by difference (g)": "575.8135"
+  },
+  {
+    "recipeTitle": "El Mestouk",
+    "Calories": "251.0",
+    "Protein (g)": "4.15",
+    "Total lipid (fat) (g)": "14.4998",
+    "Carbohydrate, by difference (g)": "101.0235"
+  },
+  {
+    "recipeTitle": "Middle Eastern White Beans",
+    "Calories": "229.0",
+    "Protein (g)": "11.6624",
+    "Total lipid (fat) (g)": "29.0619",
+    "Carbohydrate, by difference (g)": "45.0295"
+  },
+  {
+    "recipeTitle": "25-Minute Tunisian Vegetable Couscous",
+    "Calories": "387.0",
+    "Protein (g)": "136.9014",
+    "Total lipid (fat) (g)": "64.307",
+    "Carbohydrate, by difference (g)": "598.2534"
+  },
+  {
+    "recipeTitle": "Tunisian Soup",
+    "Calories": "215.0",
+    "Protein (g)": "77.5879",
+    "Total lipid (fat) (g)": "26.3916",
+    "Carbohydrate, by difference (g)": "342.6058"
+  },
+  {
+    "recipeTitle": "Dziriat (Algerian Almond Tarts)",
+    "Calories": "170.0",
+    "Protein (g)": "6.3464",
+    "Total lipid (fat) (g)": "903.9804",
+    "Carbohydrate, by difference (g)": "403.3155"
+  },
+  {
+    "recipeTitle": "The Shorba Freekeh of Algeria",
+    "Calories": "375.0",
+    "Protein (g)": "194.5148",
+    "Total lipid (fat) (g)": "119.6392",
+    "Carbohydrate, by difference (g)": "140.1566"
+  },
+  {
+    "recipeTitle": "Ethiopian Cabbage Dish",
+    "Calories": "428.0",
+    "Protein (g)": "6.9007",
+    "Total lipid (fat) (g)": "109.6845",
+    "Carbohydrate, by difference (g)": "65.6971"
+  },
+  {
+    "recipeTitle": "Berbere Spice Blend",
+    "Calories": "3.0",
+    "Protein (g)": "6.8974",
+    "Total lipid (fat) (g)": "6.1018",
+    "Carbohydrate, by difference (g)": "28.3757"
+  },
+  {
+    "recipeTitle": "Qumbe (East African Coconut Candy)",
+    "Calories": "280.0",
+    "Protein (g)": "8.076",
+    "Total lipid (fat) (g)": "82.192",
+    "Carbohydrate, by difference (g)": "297.6293"
+  },
+  {
+    "recipeTitle": "Sambusa",
+    "Calories": "163.0",
+    "Protein (g)": "179.8887",
+    "Total lipid (fat) (g)": "144.1151",
+    "Carbohydrate, by difference (g)": "26.191"
+  },
+  {
+    "recipeTitle": "Ethiopian Vegetable Bowl",
+    "Calories": "286.0",
+    "Protein (g)": "17.1377",
+    "Total lipid (fat) (g)": "57.2952",
+    "Carbohydrate, by difference (g)": "119.9757"
+  },
+  {
+    "recipeTitle": "Eba",
+    "Calories": "290.0",
+    "Protein (g)": "0.0",
+    "Total lipid (fat) (g)": "0.0",
+    "Carbohydrate, by difference (g)": "0.0"
+  },
+  {
+    "recipeTitle": "Persian Sabzi Polo (Herb Rice with Fava Beans)",
+    "Calories": "234.0",
+    "Protein (g)": "78.599",
+    "Total lipid (fat) (g)": "45.465",
+    "Carbohydrate, by difference (g)": "176.3408"
+  },
+  {
+    "recipeTitle": "Lamb Tagine",
+    "Calories": "423.0",
+    "Protein (g)": "175.5636",
+    "Total lipid (fat) (g)": "259.4929",
+    "Carbohydrate, by difference (g)": "108.9607"
+  },
+  {
+    "recipeTitle": "Moroccan Lamb Kabobs",
+    "Calories": "554.0",
+    "Protein (g)": "205.237",
+    "Total lipid (fat) (g)": "279.2862",
+    "Carbohydrate, by difference (g)": "154.4954"
+  },
+  {
+    "recipeTitle": "Moroccan Chicken Tagine",
+    "Calories": "371.0",
+    "Protein (g)": "196.3138",
+    "Total lipid (fat) (g)": "921.3935",
+    "Carbohydrate, by difference (g)": "97.5656"
+  },
+  {
+    "recipeTitle": "Moroccan Meat Cigars",
+    "Calories": "460.0",
+    "Protein (g)": "53.5208",
+    "Total lipid (fat) (g)": "10.9519",
+    "Carbohydrate, by difference (g)": "5.1488"
+  },
+  {
+    "recipeTitle": "Moroccan Peach Roasted Chicken",
+    "Calories": "567.0",
+    "Protein (g)": "337.0201",
+    "Total lipid (fat) (g)": "424.4539",
+    "Carbohydrate, by difference (g)": "58.7352"
+  },
+  {
+    "recipeTitle": "Lamb Chops with Preserved Lemon (Moroccan Style)",
+    "Calories": "425.0",
+    "Protein (g)": "2.044",
+    "Total lipid (fat) (g)": "13.8657",
+    "Carbohydrate, by difference (g)": "6.981"
+  },
+  {
+    "recipeTitle": "Spicy African Yam Soup",
+    "Calories": "345.0",
+    "Protein (g)": "123.392",
+    "Total lipid (fat) (g)": "51.8845",
+    "Carbohydrate, by difference (g)": "288.3429"
+  },
+  {
+    "recipeTitle": "Senegalese Riz Gras",
+    "Calories": "834.0",
+    "Protein (g)": "245.2262",
+    "Total lipid (fat) (g)": "478.6798",
+    "Carbohydrate, by difference (g)": "513.1459"
+  },
+  {
+    "recipeTitle": "Saharan West African Peanut and Pineapple Soup",
+    "Calories": "210.0",
+    "Protein (g)": "53.9856",
+    "Total lipid (fat) (g)": "123.4815",
+    "Carbohydrate, by difference (g)": "99.109"
+  },
+  {
+    "recipeTitle": "African Turkey Stew",
+    "Calories": "630.0",
+    "Protein (g)": "281.3741",
+    "Total lipid (fat) (g)": "312.4779",
+    "Carbohydrate, by difference (g)": "75.9441"
+  },
+  {
+    "recipeTitle": "African Sweet Potato and Peanut Soup",
+    "Calories": "221.0",
+    "Protein (g)": "38.6537",
+    "Total lipid (fat) (g)": "51.9924",
+    "Carbohydrate, by difference (g)": "176.6764"
+  },
+  {
+    "recipeTitle": "Powerhouse African Yam Stew",
+    "Calories": "776.0",
+    "Protein (g)": "183.3372",
+    "Total lipid (fat) (g)": "92.0206",
+    "Carbohydrate, by difference (g)": "995.7786"
+  },
+  {
+    "recipeTitle": "Tomato Bredie",
+    "Calories": "531.0",
+    "Protein (g)": "326.3191",
+    "Total lipid (fat) (g)": "23.9094",
+    "Carbohydrate, by difference (g)": "70.7574"
+  },
+  {
+    "recipeTitle": "Zimbabwean Chicken and Vegetable Soup",
+    "Calories": "266.0",
+    "Protein (g)": "45.622",
+    "Total lipid (fat) (g)": "79.6538",
+    "Carbohydrate, by difference (g)": "120.5977"
+  },
+  {
+    "recipeTitle": "Vary Aminanana (Collard Greens and Rice)",
+    "Calories": "144.0",
+    "Protein (g)": "79.2717",
+    "Total lipid (fat) (g)": "31.3053",
+    "Carbohydrate, by difference (g)": "762.3361"
+  },
+  {
+    "recipeTitle": "Spicy Potato Noodles (Bataka Sev)",
+    "Calories": "336.0",
+    "Protein (g)": "82.9398",
+    "Total lipid (fat) (g)": "59.2364",
+    "Carbohydrate, by difference (g)": "274.2556"
+  },
+  {
+    "recipeTitle": "South African Brown Pudding",
+    "Calories": "302.0",
+    "Protein (g)": "60.5438",
+    "Total lipid (fat) (g)": "131.6097",
+    "Carbohydrate, by difference (g)": "908.9502"
+  },
+  {
+    "recipeTitle": "Milk Tart",
+    "Calories": "241.0",
+    "Protein (g)": "39.75",
+    "Total lipid (fat) (g)": "43.8827",
+    "Carbohydrate, by difference (g)": "272.235"
+  },
+  {
+    "recipeTitle": "Tajin Sibnekh (Tunisian Chicken and Eggs)",
+    "Calories": "191.0",
+    "Protein (g)": "114.7773",
+    "Total lipid (fat) (g)": "150.146",
+    "Carbohydrate, by difference (g)": "91.0516"
+  },
+  {
+    "recipeTitle": "Algerian Carrots",
+    "Calories": "157.0",
+    "Protein (g)": "9.3335",
+    "Total lipid (fat) (g)": "70.0057",
+    "Carbohydrate, by difference (g)": "91.4345"
+  },
+  {
+    "recipeTitle": "Algerian Couscous",
+    "Calories": "492.0",
+    "Protein (g)": "1885.185",
+    "Total lipid (fat) (g)": "929.6183",
+    "Carbohydrate, by difference (g)": "588.1747"
+  },
+  {
+    "recipeTitle": "Arabic Green Beans with Beef",
+    "Calories": "158.0",
+    "Protein (g)": "219.9756",
+    "Total lipid (fat) (g)": "67.461",
+    "Carbohydrate, by difference (g)": "110.4082"
+  },
+  {
+    "recipeTitle": "Le Marriage, Alfredo Algerie",
+    "Calories": "886.0",
+    "Protein (g)": "146.1469",
+    "Total lipid (fat) (g)": "267.0834",
+    "Carbohydrate, by difference (g)": "77.4051"
+  },
+  {
+    "recipeTitle": "Moroccan Sardine Meatballs",
+    "Calories": "418.0",
+    "Protein (g)": "20.5536",
+    "Total lipid (fat) (g)": "366.3112",
+    "Carbohydrate, by difference (g)": "39.7659"
+  },
+  {
+    "recipeTitle": "Dersa (Algerian Chile Paste)",
+    "Calories": "70.0",
+    "Protein (g)": "1.69",
+    "Total lipid (fat) (g)": "28.0171",
+    "Carbohydrate, by difference (g)": "7.3831"
+  },
+  {
+    "recipeTitle": "Tahini Salad",
+    "Calories": "357.0",
+    "Protein (g)": "37.119",
+    "Total lipid (fat) (g)": "114.6071",
+    "Carbohydrate, by difference (g)": "75.33"
+  },
+  {
+    "recipeTitle": "Tastira (Tunisian Fried Peppers and Eggs)",
+    "Calories": "209.0",
+    "Protein (g)": "32.4399",
+    "Total lipid (fat) (g)": "62.5866",
+    "Carbohydrate, by difference (g)": "37.5748"
+  },
+  {
+    "recipeTitle": "Harissa Chicken",
+    "Calories": "178.0",
+    "Protein (g)": "3.0938",
+    "Total lipid (fat) (g)": "2.5571",
+    "Carbohydrate, by difference (g)": "11.3031"
+  },
+  {
+    "recipeTitle": "Tajine de Poulet aux Carottes et Patates Douces (Chicken and Sweet Potato Tagine)",
+    "Calories": "420.0",
+    "Protein (g)": "188.5029",
+    "Total lipid (fat) (g)": "805.7547",
+    "Carbohydrate, by difference (g)": "143.8415"
+  },
+  {
+    "recipeTitle": "Lamb Merguez Sausage Patties",
+    "Calories": "268.0",
+    "Protein (g)": "78.4682",
+    "Total lipid (fat) (g)": "112.2788",
+    "Carbohydrate, by difference (g)": "8.1899"
+  },
+  {
+    "recipeTitle": "Ugandan Kabobs",
+    "Calories": "382.0",
+    "Protein (g)": "226.6229",
+    "Total lipid (fat) (g)": "800.9379",
+    "Carbohydrate, by difference (g)": "139.5672"
+  },
+  {
+    "recipeTitle": "Ethiopian Spiced Cottage Cheese",
+    "Calories": "232.0",
+    "Protein (g)": "43.6349",
+    "Total lipid (fat) (g)": "20.2219",
+    "Carbohydrate, by difference (g)": "73.9746"
+  },
+  {
+    "recipeTitle": "Key Sir Alicha (Ethiopian Beets and Potatoes)",
+    "Calories": "486.0",
+    "Protein (g)": "2.0817",
+    "Total lipid (fat) (g)": "54.7035",
+    "Carbohydrate, by difference (g)": "16.8656"
+  },
+  {
+    "recipeTitle": "Berbere (Ethiopian Spice)",
+    "Calories": "25.0",
+    "Protein (g)": "9.6682",
+    "Total lipid (fat) (g)": "7.9259",
+    "Carbohydrate, by difference (g)": "38.0463"
+  },
+  {
+    "recipeTitle": "Doro Wat: Ethiopian Chicken Dish",
+    "Calories": "778.0",
+    "Protein (g)": "485.3923",
+    "Total lipid (fat) (g)": "182.8144",
+    "Carbohydrate, by difference (g)": "113.9105"
+  },
+  {
+    "recipeTitle": "Tomato Chutney",
+    "Calories": "33.0",
+    "Protein (g)": "10.4756",
+    "Total lipid (fat) (g)": "1.3164",
+    "Carbohydrate, by difference (g)": "53.519"
+  },
+  {
+    "recipeTitle": "Injera",
+    "Calories": "166.0",
+    "Protein (g)": "42.6759",
+    "Total lipid (fat) (g)": "15.3345",
+    "Carbohydrate, by difference (g)": "271.854"
+  },
+  {
+    "recipeTitle": "Gomen Wat",
+    "Calories": "88.0",
+    "Protein (g)": "93.2441",
+    "Total lipid (fat) (g)": "16.4129",
+    "Carbohydrate, by difference (g)": "24.6402"
+  },
+  {
+    "recipeTitle": "Tikil Gomen (Ethiopian Cabbage)",
+    "Calories": "166.0",
+    "Protein (g)": "1.4411",
+    "Total lipid (fat) (g)": "41.1456",
+    "Carbohydrate, by difference (g)": "13.6917"
+  },
+  {
+    "recipeTitle": "Strawberry, Ginger and Mint Sekanjabin",
+    "Calories": "0.0",
+    "Protein (g)": "6.2506",
+    "Total lipid (fat) (g)": "2.0729",
+    "Carbohydrate, by difference (g)": "842.9897"
+  }
+]
